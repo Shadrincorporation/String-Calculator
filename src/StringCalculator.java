@@ -16,7 +16,7 @@ public class StringCalculator {
         }
     }
 
-    public static String calculate(String input) throws Exception {
+    public static String calculate(String input) {
         if (input.matches("\"[^\"]{1,10}\"\\s[*/]\\s\\d+")) {
             String[] parts = input.split("\\s");
             String stringP = parts[0].substring(1, parts[0].length() - 1);
@@ -37,7 +37,7 @@ public class StringCalculator {
             String stringP = parts[0].substring(1, parts[0].length() - 1);
             char operation = parts[1].charAt(0);
             String stringP2 = parts[2].substring(1, parts[2].length() - 1);
-            ;
+
 
 
             return switch (operation) {
